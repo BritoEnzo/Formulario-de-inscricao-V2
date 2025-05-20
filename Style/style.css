@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #aaaaaaee;
+    color: #333;
+    line-height: 1.6;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-top: 0px auto;
+    margin-bottom: 0px auto;
+}
+
+.form-container {
+    background-color: #D6EADF;
+    padding: 10px;
+    border-radius: 15px;
+    width: 600px;
+    height: 500px;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #482a9b;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caixadetexto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #D6EADF;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+    border-color: black;
+    outline: none;
+}
+
+.container {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.cadastrarlimpar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background: #482a9b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #c54681;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+input[type="reset"]:hover {
+    background-color: #c54681;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
